@@ -167,33 +167,35 @@ html {
     }
 
 body {
-    font-family: "Lucida Console", Monaco, monospace;
-    background: #161D2D;
-    margin: 50px auto 30px;
-    color: #D9D9C8;
-    padding: 20px;
-    width: 85%;
-    min-width: 600px;
-    max-width: 1250px;
-    min-height: 280px;
-    position: relative;
-    line-height: 1.25em;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -o-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    border-radius: 6px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding;
-    -o-background-clip: padding-box;
-    -ms-background-clip: padding-box;
-    -khtml-background-clip: padding-box;
-    background-clip: padding-box
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Console", Monaco, monospace;
+  background: #161D2D;
+  margin: 50px auto 30px;
+  color: #D9D9C8;
+  padding: 20px;
+  width: 85%;
+  min-width: 600px;
+  max-width: 1250px;
+  min-height: 280px;
+  position: relative;
+  line-height: 1.25em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  border-radius: 6px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  -o-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  background-clip: padding-box
 }
 
 body:after {
@@ -247,9 +249,6 @@ p.flash {
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.6)));
-    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
     border: 3px solid rgba(255, 255, 255, 0.5);
     -moz-background-clip: padding;
     -webkit-background-clip: padding;
@@ -277,8 +276,8 @@ p.flash:empty {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     -o-box-shadow: none;
-    box-shadow: none;
-    background: none
+    box-shadow: 10px 10px yellow;
+    background: none;
 }
 
 h1 {
@@ -632,6 +631,13 @@ form label {
 form textarea {
     height: 12em;
     font-size: 1.1em
+}
+
+p {
+  flex-grow: 1;
+}
+footer{
+  border-top: 1px solid #6c7c9a;
 }
 
 input[type=submit] {
